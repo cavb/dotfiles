@@ -2,7 +2,6 @@
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias --="cd -"
 
 # Shortcuts
 alias d="cd ~/Dropbox"
@@ -12,6 +11,23 @@ alias repos="cd ~/Documentos/repositorios/"
 alias g="git"
 alias h="history"
 alias j="jobs"
+
+# mv, rm, cp
+alias mv='mv -v'
+alias rm='rm -i -v'
+alias cp='cp -v'
+
+alias df='df -h'
+
+# Git
+alias s='git status'
+alias a='git add --all'
+alias p='git push origin master'
+alias c='git commit'
+alias pull='git pull'
+alias diff='git diff'
+alias glog='git log --pretty=format:"%h %s" --graph'
+
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
