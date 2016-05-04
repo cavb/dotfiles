@@ -1,6 +1,7 @@
-# Dotfiles
+# My Dotfiles
 
 ## Fish
 * Frequent directory alias
-* Improved some default options in basic comands
-* Prompt shows activated virtualenv using function file (no more 'funced fish_prompt') [(fish_prompt.fish)](fish/functions/fish_prompt.fish)
+* Improved some default options in basic commands
+* Prompt shows activated virtualenv
+* Added z-fish [(Thx to @roryokane)](https://github.com/roryokane/z-fish/blob/master/z.fish)
