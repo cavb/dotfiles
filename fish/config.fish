@@ -1,7 +1,5 @@
-# Virtual env wrapper
-set -x WORKON_HOME=$HOME/.virtualenvs
-set -x PROJECT_HOME=$HOME/Devel
-# source /usr/local/bin/virtualenvwrapper.sh
+# Load z
+source functions/z.fish
 
 # Git
 alias s='git status'
@@ -12,11 +10,6 @@ alias pull='git pull'
 alias diff='git diff'
 alias glog='git log --pretty=format:"%h %s" --graph'
 
-# Servers
-alias minga_server_do='ssh root@mingavalpo.cl'
-alias estudio_server_do='ssh root@estudionorte.cl'
-
-set -x PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # Virtual fish
 eval (python -m virtualfish)
 
