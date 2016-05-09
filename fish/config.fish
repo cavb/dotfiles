@@ -1,5 +1,5 @@
 # Load z
-source functions/z.fish
+. ~/.config/fish/z.fish
 
 # Git
 alias s='git status'
