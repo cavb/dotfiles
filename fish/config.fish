@@ -10,6 +10,12 @@ alias pull='git pull'
 alias diff='git diff'
 alias glog='git log --pretty=format:"%h %s" --graph'
 
+# Django most used commands
+alias r='./manage.py runserver 0:8000'
+alias mm='./manage.py makemigrations'
+alias mig='./manage.py migrate'
+alias sp='./manage.py shell_plus'
+
 # Virtual fish
 eval (python -m virtualfish)
 
