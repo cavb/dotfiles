@@ -9,6 +9,8 @@ alias c='git commit'
 alias pull='git pull'
 alias diff='git diff'
 alias glog='git log --pretty=format:"%h %s" --graph'
+alias git-uncommit-soft='git reset --soft HEAD~1'
+alias git-uncommit-hard='git reset --hard HEAD~1'
 
 # Django most used commands
 alias r='./manage.py runserver 0:8000'
