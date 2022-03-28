@@ -1,11 +1,8 @@
-# Load z
-. ~/.config/fish/z.fish
-
 # Git
 alias s='git status'
 alias a='git add --all'
 alias p='git push origin master'
-alias c='git commit'
+alias c='git commit -m'
 alias pull='git pull'
 alias diff='git diff'
 alias glog='git log --pretty=format:"%h %s" --graph'
@@ -19,18 +16,31 @@ alias mig='./manage.py migrate'
 alias sp='./manage.py shell_plus'
 
 # Virtual fish
-eval (python -m virtualfish)
+# eval (python3 -m virtualfish)
+
+# cat -> Bat
+alias realcat="/usr/bin/cat"
+alias cat="bat"
+
 
 # Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+alias l="exa"
+alias ll="exa --long --all --header --group-directories-first --git"
+alias la="exa --long --all --header --group-directories-first --binary --links --inode --blocks"
+alias ld="exa --long --all --header --group-directories-first --list-dirs"
+alias lg="exa --long --all --header --group-directories-first --group --git"
+alias le="exa --long --all --header --group-directories-first --extended"
+alias lt="exa --long --all --header --group-directories-first --tree --level 3"
+
 # Shortcuts
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias desk="cd ~/Escritorio"
-alias repos="cd ~/Documentos/repositorios/"
+alias repos="cd ~/Documents/repos/"
 alias g="git"
 alias h="history"
 alias j="jobs"
